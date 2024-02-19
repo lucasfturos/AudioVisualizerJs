@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Audio Visualizer</title>
+        <link rel="icon" href="https://www.svgrepo.com/show/227767/audio.svg" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <script type="module" src="/js/app.js"></script>
+    </head>
+    <body>
+        <h1>Audio Visualizer</h1>
+        <input type="file" id="file-input" class="file-input" />
+        <audio id="audio-output" controls></audio>
+        <div class="radio-container">
+            <input type="radio" name="plot-option" id="oscillation" checked />
+            <label for="oscillation" class="radio-label">Oscillation</label>
+            <input type="radio" name="plot-option" id="spectrum" />
+            <label for="spectrum" class="radio-label">Spectrum</label>
+        </div>
+        <canvas></canvas>
+    </body>
+</html>
